@@ -193,7 +193,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware \
     /mnt/vendor/persist:/persist
-TARGET_USES_MKE2FS := true
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
