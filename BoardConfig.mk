@@ -218,6 +218,9 @@ TARGET_USES_OLD_MNC_FORMAT := true
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Ignore SELinux neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-02-05
 
