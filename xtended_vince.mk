@@ -22,14 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common legionROMs stuff.
-$(call inherit-product, vendor/legion/config/common.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := legion_vince
+PRODUCT_NAME := xtended_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
@@ -44,8 +44,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/vince/vince:8.1.0/OPM1.171019.019/V10.0.4.0.OEGMIFH:user/release-keys"
 
-LEGION_BUILD_TYPE := OFFICIAL
+XTENDED_BUILD_TYPE := OFFICIAL
 
-CPU_MODEL := Snapdragon_625
+#CPU_MODEL := Snapdragon_625
 
-LEGION_MAINTAINER := Rajkale99
+#LEGION_MAINTAINER := Rajkale99
